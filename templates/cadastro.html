@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduCat - Login</title>
-    <link rel="stylesheet" href="/static/css/login.css">
+    <title>EduCat - Cadastro</title>
+    <link rel="stylesheet" href="../static/css/cadastro.css">
 </head>
 <body>
-
     <section class="section2">
         <img src="/static/img/logotipo.png" alt="logotipo">
     </section>
@@ -15,11 +14,16 @@
     <section class="section1">
         <div class="login">
             <div class="logincontent">
-                <h1>Realize seu login</h1>
+                <h1>Realize seu cadastro</h1>
                 
                 <div class="inputlabel">
                     <label for="username">Username</label>
                     <input class="inputtext" type="text" name="username" id="username">
+                </div>
+
+                <div class="inputlabel">
+                    <label for="email">Email</label>
+                    <input class="inputtext" type="email" name="email" id="email">
                 </div>
                 
                 <div class="inputlabel">
@@ -27,9 +31,8 @@
                     <input class="inputtext" type="password" name="senha" id="senha">
                 </div>
 
-                <a href="#esqueceusenha">Esqueceu a senha?</a>
-                <input class="submit" type="submit" value="Entrar">
-                <a href="cadastro.html">Não possui cadastro?</a>
+                <input class="submit" type="submit" value="Cadastrar">
+                <a href="login.html">Já possui cadastro?</a>
             </div>
         </div>
     </section>
