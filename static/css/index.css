@@ -4,13 +4,12 @@ body {
     width: 100svw;
     height: 100svh;
     display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .section1 {
     width: 45svw;
     height: 100svh;
     background-image: url(/static/img/background.png);
-    background-color: aliceblue;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -64,8 +63,8 @@ body {
     margin: 10px;
     padding: 15px 35px 15px 35px;
     height: 20px;
-    border-radius: 5px;
-    background-color: lightblue;
+    border-radius: 2px;
+    font-size: 20px;
 }
 
 .section2 .navbar ul li:hover {
@@ -86,7 +85,6 @@ body {
     display: inherit;
     padding: 50px 50px 50px 20px;
     border-radius: 20px;
-    background-color: lightblue;
 }
 
 .text {

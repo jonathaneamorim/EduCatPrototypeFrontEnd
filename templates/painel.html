@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCat - Painel</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: grid;
+
+            grid-template-areas:
+            "noticias aluno"
+            "painel aluno"
+            ;
+
+            grid-template-columns: 72svw 28svw;
+
+            grid-template-rows: 25svh 75svh;
+        }
+
+        .noticias {
+            grid-area: noticias;
+            border: 1px solid black;
+            display: flex;
+            background-color: azure;
+        }
+
+        .aluno {
+            grid-area: aluno;
+            display: flex;
+            flex-direction: column;
+            background-color: #d3d3ff;;
+        }
+
+        .painel {
+            grid-area: painel;
+            border: 1px solid black;
+        }
+
+        .image {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+        .dados {
+            width: 55%;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dadosbox ul {
+            padding: 0;
+            margin: 0px 0px 0px 10px;
+        }
+
+        .dados li {
+            margin: 10px 0px 0px 2px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #botaoperfil a {
+            text-decoration: none;
+            background-color: violet;
+            color: white;
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        .image img {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .imageblock {
+            width: 45%;
+            margin: 0px 0px 0px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logonoticias img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .logonoticias {
+            width: 20%;
+            height: 100%;
+        }
+
+        .noticiascard {
+            width: 80%;
+            height: 100%;
+            display: flex;
+        }
+
+        .card {
+            border: 1px solid black;
+            width: 30%;
+            height: 80%;
+            margin: 13px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .noticiatitle {
+            font-size: 15px;
+            margin: 10px;
+        }
+
+        .noticiatext {
+            font-size: 14px;
+            text-align: justify;
+            margin: 10px 20px 10px 20px;
+        }
+
+        .noticiaslink {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="noticias">
+        
+        <div class="logonoticias">
+            <img src="/static/img/logotipo.png" alt="logotipo">
+        </div>
+
+        <div class="noticiascard">
+            <div class="card">
+                <h1 class="noticiatitle">O Lorem foi de Ipsum</h1>
+                <p class="noticiatext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,</p>
+                <a class="noticiaslink" href="#noticia3"> Clique e saiba mais</a>
+            </div>
+            <div class="card">
+                <h1 class="noticiatitle">O Lorem foi de Ipsum</h1>
+                <p class="noticiatext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,</p>
+                <a class="noticiaslink" href="#noticia3"> Clique e saiba mais</a>
+            </div>
+            <div class="card">
+                <h1 class="noticiatitle">O Lorem foi de Ipsum</h1>
+                <p class="noticiatext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,</p>
+                <a class="noticiaslink" href="#noticia3"> Clique e saiba mais</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="painel"></div>
+    <div class="aluno">
+        <div class="image">
+
+            <div class="imageblock">
+                <img src="https://r1.community.samsung.com/t5/image/serverpage/image-id/7932959i5E702BC9B5CBDC93?v=v2" alt="img perfil">
+            </div>
+
+            <div class="dados">
+                <div class="dadosbox">
+                    <ul>
+                        <li>Código: 202410004644</li>
+                        <li>Usuario: Jonathan.ea</li>
+                        <li>Nome: Jonathan</li>
+                        <li>Email: jonathan@gmail.com</li>
+                        <li id="botaoperfil"><a href="linkperfil">Meu perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
